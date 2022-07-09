@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lists demonstration</title>
+</head>
+<body>
+    <style>
+        /*
+        Precedence(Inline style is highest)
+            1, 1, 1 = 111
+            1, 1, 0 = 110
+            0, 1, 1 = 11
+            0, 0, 1 = 1
+        */
+        li {
+
+        }
+        li.list1 {
+            font-size: 20px !important;
+        }
+        li.another {}
+
+        li.list1#liEl1  {
+            font-size: 50px;
+        }
+
+        ol li {
+            color: red;
+        }
+
+        li {
+            box-sizing: content-box; /* border-box is default */
+        }
+    </style>
+
+    <ul>
+        <li class="list1 another" style="font-size: 30px;">First</li>
+        <li class="list1 another">First</li>
+        <li id="liEl1" class="list1" style="font-size: 30px;">Second</li>
+    </ul>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+    </ol>
+</body>
+</html>
