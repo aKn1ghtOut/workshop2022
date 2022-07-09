@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Contact Box</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 50px;
+        }
+        div:not(div > div) {
+            width: 700px;
+            padding: 10px;
+            border: 2px dashed black;
+            background-color: #eeeeee;
+        }
+        div > div {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 20px;
+        }
+        div > img {
+            height: 200px;
+            border: 2px solid black;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+    <div>
+        <div><img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt=""></div>
+        <div>
+            <h1>Full Name</h1> 
+            <h2>Job Title</h2>
+            <h2>Telephone Number</h2>
+            <h2>Address</h2>
+        </div>
+    </div>
+</body>
+</html>
